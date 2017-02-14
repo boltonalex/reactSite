@@ -1,0 +1,22 @@
+@import "_angled-edges";
+
+$bgColor : #A4BF9A;
+
+.summary {
+  margin-top: 10px;
+  background: $bgColor;
+  margin-top: -10px;
+  padding-top: 30px;
+  margin-bottom: 100px;
+  @include angled-edge('outside top', 'upper right', $bgColor, 25);
+  @include angled-edge('outside bottom', 'lower right', $bgColor, 35);
+
+  .list-group {
+      background: $bgColor;
+      .list-group-item {
+          background: $bgColor;
+        }
+    }
+
+
+}

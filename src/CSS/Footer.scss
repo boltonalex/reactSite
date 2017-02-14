@@ -1,0 +1,24 @@
+@import "_angled-edges";
+
+$bgColor: #fff;
+$color: #FB6E41;
+
+.footer {
+  background: $bgColor;
+  margin-top: 50px;
+  color: $color;
+  padding: 20px 0;
+  @include angled-edge('outside top', 'upper right', $bgColor, 30);
+
+  a {
+    color: $color;
+    padding: 0 20px;
+    &:first-child{
+      padding: 0 20px 0 0;
+    }
+  }
+  .pull-right {
+    padding: 10px 0 0 0;
+
+  }
+}

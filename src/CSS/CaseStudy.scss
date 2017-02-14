@@ -1,0 +1,38 @@
+$mainColor: #A4BF9A;
+$bgColor: #285937;
+
+.caseStudy {
+    .panel {
+        text-align: center;
+
+        p {
+            width: 90%;
+            text-align: left;
+            margin: auto;
+            padding: 10px 0;
+            color: $bgColor;
+        }
+
+        img {
+            width: 100%;
+            max-width: 350px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .panel-heading {
+          padding: 40px 0;
+          background: $mainColor;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 600;
+          letter-spacing: 2px;
+        }
+        .btn {
+          background: $mainColor;
+          color: #fff;
+        }
+
+
+    }
+}

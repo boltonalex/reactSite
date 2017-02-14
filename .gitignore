@@ -35,3 +35,18 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+
+# CSS files
+/src/CSS/AboutThisSite.css
+/src/CSS/CaseStudy.css
+/src/CSS/Footer.css
+/src/CSS/Header.css
+/src/CSS/Main.css
+/src/CSS/Nav.css
+/src/CSS/Skills.css
+/src/CSS/Summary.css
+
+
+# build files
+build/

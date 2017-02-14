@@ -1,0 +1,33 @@
+@import "_angled-edges";
+$panelColor: #8EBC94;
+$bgColor: #285937;
+$mainColor: #A4BF9A;
+$linkColor: #FB6E41;
+
+.AboutThisSite {
+    background: $bgColor;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    @include angled-edge( 'outside top', 'upper left', $bgColor, 20);
+
+    .panel {
+        background: #fff;
+        color: $bgColor;
+
+        .panel-heading {
+            padding: 40px 0;
+            background: $panelColor;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        a {
+            color: $linkColor;
+        }
+    }
+}

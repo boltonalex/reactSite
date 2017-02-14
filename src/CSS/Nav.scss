@@ -1,0 +1,45 @@
+@import "_angled-edges";
+$bgColor: #FB6E41;
+$btnColor: #FEB386;
+$linkedBlue: #1760ab;
+$brandColor: #ffffff;
+
+
+.navbar {
+    margin-bottom: 0;
+    background: $bgColor;
+    border: 0;
+    border-radius: 0;
+    @include angled-edge( 'outside bottom', 'lower right', $bgColor, 30);
+
+    .navbar-brand {
+        color: $brandColor;
+        &:hover {
+          color: $brandColor;
+        }
+    }
+
+    .btn-group {
+        margin-top: 10px;
+
+        .btn {
+            border: 0;
+            color: $btnColor;
+            background: $brandColor;
+            &:hover {
+              background: $btnColor;
+              color: $brandColor;
+            }
+        }
+
+
+        .btn-primary {
+          background: $btnColor;
+          color: $brandColor;
+            &:hover {
+              color: $btnColor;
+              background: $brandColor;
+            }
+        }
+    }
+}
