@@ -1,7 +1,18 @@
-$mainColor: #A4BF9A;
-$bgColor: #285937;
+@import "_colors";
+
+$headerColor: $color-primary-1;
+$linkColor: $color-secondary-1-3;
+$textColor: $color-primary-4;
+$bgColor: $color-primary-2;
 
 .caseStudy {
+  background: $bgColor;
+  margin-top: -100px;
+  padding-top: 100px;
+
+  margin-bottom: -100px;
+  padding-bottom: 100px;
+
     .panel {
         text-align: center;
 
@@ -10,7 +21,7 @@ $bgColor: #285937;
             text-align: left;
             margin: auto;
             padding: 10px 0;
-            color: $bgColor;
+            color: $textColor;
         }
 
         img {
@@ -22,14 +33,14 @@ $bgColor: #285937;
 
         .panel-heading {
           padding: 40px 0;
-          background: $mainColor;
+          background: $headerColor;
           color: #fff;
           font-size: 15px;
           font-weight: 600;
           letter-spacing: 2px;
         }
         .btn {
-          background: $mainColor;
+          background: $linkColor;
           color: #fff;
         }
 

@@ -1,8 +1,11 @@
 @import "_angled-edges";
+@import "_colors";
+
+
 $panelColor: #8EBC94;
-$bgColor: #285937;
-$mainColor: #A4BF9A;
-$linkColor: #FB6E41;
+$bgColor: $color-primary-1;
+$headerColor: $color-secondary-1-3;
+$linkColor: $color-secondary-1-4;
 
 .AboutThisSite {
     background: $bgColor;
@@ -14,11 +17,11 @@ $linkColor: #FB6E41;
 
     .panel {
         background: #fff;
-        color: $bgColor;
+        color: $headerColor;
 
         .panel-heading {
             padding: 40px 0;
-            background: $panelColor;
+            background: $headerColor;
             color: #fff;
             font-size: 15px;
             font-weight: 600;

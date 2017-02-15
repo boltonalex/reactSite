@@ -1,5 +1,9 @@
 @import "_angled-edges";
-$bgColor: #285937;
+@import "_colors";
+
+$bgColor: $color-primary-3;
+
+
 
 .skills {
     margin-top: -100px;

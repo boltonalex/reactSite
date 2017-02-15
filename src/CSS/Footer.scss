@@ -1,24 +1,94 @@
 @import "_angled-edges";
+@import "_colors";
 
 $bgColor: #fff;
-$color: #FB6E41;
+$linkColor: $color-secondary-1-4;
+$textColor: $color-secondary-1-0;
+
 
 .footer {
-  background: $bgColor;
-  margin-top: 50px;
-  color: $color;
-  padding: 20px 0;
-  @include angled-edge('outside top', 'upper right', $bgColor, 30);
+    background: $bgColor;
+    margin-top: 50px;
+    color: $textColor;
+    padding: 20px 0;
+    @include angled-edge( 'outside top', 'upper right', $bgColor, 30);
 
-  a {
-    color: $color;
-    padding: 0 20px;
-    &:first-child{
-      padding: 0 20px 0 0;
+    a {
+        color: $linkColor;
+        padding: 0 20px;
+
+        &:first-child {
+            padding: 0 20px 0 0;
+        }
     }
-  }
-  .pull-right {
-    padding: 10px 0 0 0;
 
-  }
+    .pull-right {
+        padding: 10px 0 0;
+    }
+
+    .btn-group {
+        margin-top: 10px;
+
+        .btn {
+            border: 0;
+            background: $bgColor;
+
+            &:hover {
+                background: $bgColor;
+            }
+        }
+
+        .btn-primary {
+            background: $bgColor;
+
+            &:hover {
+                background: $bgColor;
+            }
+        }
+
+        .email {
+            span {
+                width: 50px;
+                height: 31px;
+                display: block;
+                background: url("../IMG/iconsForSite.png") -4px -6px no-repeat;
+            }
+
+            // &:hover {
+            //     span {
+            //       background: url("../IMG/iconsForSite.png") -4px -50px no-repeat;
+            //     }
+            // }
+        }
+
+        .linkedin {
+            span {
+                width: 30px;
+                height: 30px;
+                display: block;
+                background: url("../IMG/iconsForSite.png") -108px -6px no-repeat;
+            }
+
+            // &:hover {
+            //     span {
+            //       background: url("../IMG/iconsForSite.png") -108px -50px no-repeat;
+            //     }
+            // }
+        }
+
+        .cv {
+            span {
+                width: 25px;
+                height: 35px;
+                display: block;
+                background: url("../IMG/iconsForSite.png") -68px -4px no-repeat;
+            }
+
+            // &:hover {
+            //     span {
+            //       background: url("../IMG/iconsForSite.png") -68px -48px no-repeat;
+            //     }
+            // }
+        }
+    }
 }

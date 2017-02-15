@@ -8,7 +8,9 @@ import text from './../IMG/text.jpg';
 class CaseStudy extends Component {
     render() {
         return (
-            <Grid className="caseStudy">
+          <div className="caseStudy">
+
+            <Grid>
                 <Row>
                     <Col xs={10} xsOffset={1} md={4} mdOffset={1}>
                         <Panel header='App Name : Lorem Text Generator'>
@@ -22,7 +24,7 @@ class CaseStudy extends Component {
                             <p>
                                 This project uses the following tools: axios, babel and bootstrap.
                             </p>
-                            <Button href="text/">Take a look</Button>
+                            <Button href="textGenerator/" target="_blank">Take a look</Button>
 
                         </Panel>
                     </Col>
@@ -38,16 +40,17 @@ class CaseStudy extends Component {
                                 A cron job made in node calls to the DarkSky weather api, writes the current temperature and the unix timestamp to a json file.
                             </p>
                             <p>
-                                The cron task uses the following tools: fs, node-cron and request.
+                                The cron task uses the following tools: fs and request.
                             </p>
                             <p>
                                 The front end is built using ReactJs and uses the following tools: axios, react-bootstrap and react-timestamp.
                             </p>
-                            <Button href="weather/">Take a look</Button>
+                            <Button href="weather/" target="_blank">Take a look</Button>
                         </Panel>
                     </Col>
                 </Row>
             </Grid>
+          </div>
         )
     }
 }

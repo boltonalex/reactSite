@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Grid, PageHeader} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/Header.css';
-import headerBG from '../IMG/header-1b.jpg'
+import headerBG from '../IMG/header.jpg'
 
 
 class Header extends Component {
