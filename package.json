@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-uncss": "^0.6.1",
     "node-sass": "^4.5.0",
-    "react-scripts": "0.8.5"
+    "react-scripts": "0.8.5",
+    "uncss": "^0.14.1"
   },
   "dependencies": {
     "axios": "^0.15.3",
@@ -18,8 +21,8 @@
     "watch-css": "npm run build-css && node-sass src/CSS -o src/CSS --watch",
     "start": "react-scripts start & npm run watch-css",
     "build": "npm run build-css && react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "uncss-url": "grunt getNewCss"
   },
   "homepage": "http://boltonalex.com"
 }

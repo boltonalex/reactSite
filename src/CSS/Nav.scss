@@ -31,15 +31,15 @@ $bgColor: $color-secondary-1-0;
 
         .email {
             span {
-              width: 50px;
-              height: 31px;
+                width: 50px;
+                height: 31px;
                 display: block;
                 background: url("../IMG/iconsForSite.png") -4px -50px no-repeat;
             }
 
             &:hover {
                 span {
-                  background: url("../IMG/iconsForSite.png") -4px -6px no-repeat;
+                    background: url("../IMG/iconsForSite.png") -4px -6px no-repeat;
                 }
             }
         }
@@ -61,19 +61,32 @@ $bgColor: $color-secondary-1-0;
 
         .cv {
             span {
-              width: 25px;
-              height: 35px;
+                width: 25px;
+                height: 35px;
                 display: block;
                 background: url("../IMG/iconsForSite.png") -68px -48px no-repeat;
             }
 
             &:hover {
                 span {
-                  background: url("../IMG/iconsForSite.png") -68px -4px no-repeat;
+                    background: url("../IMG/iconsForSite.png") -68px -4px no-repeat;
                 }
             }
         }
 
+        .git {
+            span {
+                width: 31px;
+                height: 32px;
+                display: block;
+                background: url("../IMG/iconsForSite.png") -152px -53px no-repeat;
+            }
 
+            &:hover {
+                span {
+                    background: url("../IMG/iconsForSite.png") -152px -6px no-repeat;
+                }
+            }
+        }
     }
 }

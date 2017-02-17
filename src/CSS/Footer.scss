@@ -90,5 +90,19 @@ $textColor: $color-secondary-1-0;
             //     }
             // }
         }
+        .git {
+            span {
+                width: 31px;
+                height: 32px;
+                display: block;
+                background: url("../IMG/iconsForSite.png") -152px -6px no-repeat;
+            }
+
+            // &:hover {
+            //     span {
+            //       background: url("../IMG/iconsForSite.png") -152px -53px no-repeat;
+            //     }
+            // }
+        }
     }
 }

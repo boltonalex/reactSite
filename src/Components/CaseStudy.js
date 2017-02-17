@@ -3,6 +3,7 @@ import {Grid, Row, Col, Panel, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/CaseStudy.css';
 import weather from './../IMG/weather.jpg';
+import weatherGj from './../IMG/weatherGj.jpg';
 import text from './../IMG/text.jpg';
 
 class CaseStudy extends Component {
@@ -12,7 +13,7 @@ class CaseStudy extends Component {
 
             <Grid>
                 <Row>
-                    <Col xs={10} xsOffset={1} md={4} mdOffset={1}>
+                    <Col xs={10} md={4}>
                         <Panel header='App Name : Lorem Text Generator'>
                             <img alt="Screenshot of text generator app" src={text}/>
                             <p>
@@ -28,7 +29,7 @@ class CaseStudy extends Component {
 
                         </Panel>
                     </Col>
-                    <Col xs={10} xsOffset={1} md={4} mdOffset={2}>
+                    <Col xs={10} md={4}>
 
                         <Panel header='App Name : Weather Tool'>
 
@@ -43,9 +44,26 @@ class CaseStudy extends Component {
                                 The cron task uses the following tools: fs and request.
                             </p>
                             <p>
-                                The front end is built using ReactJs and uses the following tools: axios, react-bootstrap and react-timestamp.
+                              The graph is built using only custom javascript.
+                            </p>
+                            <p>
+                                The frontend is built using ReactJs and uses the following tools: axios, react-bootstrap and react-timestamp.
                             </p>
                             <Button href="weather/" target="_blank">Take a look</Button>
+                        </Panel>
+                    </Col>
+                    <Col xs={10} md={4}>
+
+                        <Panel header='App Name : Weather Tool with GraphJs'>
+
+                            <img alt="Screenshot of weather display app" src={weatherGj}/>
+                            <p>
+                                React and Node project.
+                            </p>
+                            <p>
+                                This app shares the weather app's data, but uses GraphJs to build the graph.
+                              </p>
+                            <Button href="weatherGraphJs/" target="_blank">Take a look</Button>
                         </Panel>
                     </Col>
                 </Row>

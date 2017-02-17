@@ -14,6 +14,9 @@ class Navigation extends Component {
         const cvTip = (
             <Tooltip id="tooltip">Take a look at my CV.</Tooltip>
         );
+        const gitTip = (
+            <Tooltip id="tooltip">Go to my GitHub page.</Tooltip>
+        );
         return (
             <Navbar>
                 <ButtonGroup className='pull-right'>
@@ -27,11 +30,16 @@ class Navigation extends Component {
                             <span></span>
                         </Button>
                     </OverlayTrigger>
-                    <OverlayTrigger placement="bottom" overlay={cvTip}>
-                        <Button className='btn btn-info cv' href='./pdf/alex-bolton-cv.pdf' target='_blank'>
+                    <OverlayTrigger placement="bottom" overlay={gitTip}>
+                        <Button className='btn btn-info git' href='https://github.com/boltonalex' target='_blank'>
                             <span></span>
                         </Button>
                     </OverlayTrigger>
+                    <OverlayTrigger placement="bottom" overlay={cvTip}>
+                      <Button className='btn btn-info cv' href='./pdf/alex-bolton-cv.pdf' target='_blank'>
+                      <span></span>
+                    </Button>
+                  </OverlayTrigger>
                 </ButtonGroup>
             </Navbar>
         )

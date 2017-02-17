@@ -14,6 +14,9 @@ class Footer extends Component {
         const cvTip = (
             <Tooltip id="tooltip">Take a look at my CV.</Tooltip>
         );
+        const gitTip = (
+            <Tooltip id="tooltip">Go to my GitHub page.</Tooltip>
+        );
         let d = new Date();
         return (
             <div className='footer'>
@@ -28,6 +31,11 @@ class Footer extends Component {
                                 </OverlayTrigger>
                                 <OverlayTrigger placement="top" overlay={linkTip}>
                                     <Button className='btn btn-primary linkedin' href='https://uk.linkedin.com/in/boltonalex' target='_blank'>
+                                        <span></span>
+                                    </Button>
+                                </OverlayTrigger>
+                                <OverlayTrigger placement="top" overlay={gitTip}>
+                                    <Button className='btn btn-info git' href='https://github.com/boltonalex' target='_blank'>
                                         <span></span>
                                     </Button>
                                 </OverlayTrigger>

@@ -10,7 +10,7 @@ $bgColor : $color-primary-4;
   margin-top: -10px;
   padding-top: 30px;
   margin-bottom: 100px;
-  @include angled-edge('outside top', 'upper right', $bgColor, 25);
+  @include angled-edge('outside top', 'upper right', $bgColor, 80);
   @include angled-edge('outside bottom', 'lower right', $bgColor, 35);
 
   .list-group {
